@@ -1,41 +1,50 @@
-#  Data Science Projects
+# Student Score Prediction
 
-Welcome! This repository contains a growing collection of beginner-to-advanced data science and machine learning projects. Each project includes a Jupyter notebook, dataset, explanation, and all the necessary files to run the analysis.
-
-Whether you're a recruiter, student, or fellow developer — you're invited to explore, learn, or fork these real-world examples of data analysis in action.
-
-
-##  Projects
-
-| Project | Description |
-|--------|-------------|
-| [Student Score Prediction](student-score-prediction/) | Predicts student exam scores using simple linear regression (scikit-learn + matplotlib) |
+A beginner-friendly machine learning project that uses **Simple Linear Regression** to predict a student’s score based on study hours. Ideal for those new to data science and Python.
 
 
 
-##  Skills Demonstrated
+##  Problem Statement
 
-- Python (pandas, numpy, matplotlib, scikit-learn)
-- Data cleaning and visualization
-- Supervised machine learning (regression)
-- Jupyter Notebooks
-- Exploratory Data Analysis (EDA)
-- Git/GitHub workflow
+> Can we accurately predict how well a student will perform in an exam based on the number of hours studied?
+
+This is a regression problem where the goal is to model the relationship between study time and performance.
 
 
 
-##  How to Use
+##  Dataset
 
-1. Clone this repo:
-   bash
-   git clone https://github.com/Akulec/data-science-projects.git
+- **Source:** Synthetic / small open dataset  
+- **Columns:**
+  - `Hours`: Time spent studying
+  - `Scores`: Exam percentage score
 
-2. Open any project folder
-   cd data-science-projects/student-score-prediction
 
-3. Install every requirements
-   pip install -r requirements.txt
 
-4. Launch jupyter notebook
-   jupyter notebook
+##  Technologies & Libraries
 
+| Language | Tools & Libraries |
+|----------|-------------------|
+| Python   | `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `jupyter` |
+
+---
+
+## 📈 Key Concepts Learned
+
+| Area | What You Learn |
+|------|----------------|
+|  **Python Basics** | Variables, functions, dictionaries, indexing, plotting |
+|   **Data Visualization** | `plt.scatter()`, `sns.regplot()` |
+|   **Train-Test Split** | Using `train_test_split()` |
+|   **Machine Learning** | Linear regression using `scikit-learn` |
+|   **Model Evaluation** | MAE, MSE, R² score |
+|  **Prediction** | Predicting scores from new hours |
+
+
+
+##  Sample Results
+
+```text
+MEAN_ABSOLUTE_ERROR: 1.85
+MEAN_SQUARE_ERROR: 6.91
+R2_SCORE: 0.99
